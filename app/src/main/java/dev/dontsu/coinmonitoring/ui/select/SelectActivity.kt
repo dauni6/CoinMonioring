@@ -2,13 +2,13 @@ package dev.dontsu.coinmonitoring.ui.select
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import dev.dontsu.coinmonitoring.R
+import androidx.activity.viewModels
 import dev.dontsu.coinmonitoring.databinding.ActivitySelectBinding
-import dev.dontsu.coinmonitoring.ui.base.BaseActivity
+import dev.dontsu.coinmonitoring.ui.base.BaseViewModelActivity
 
-class SelectActivity : BaseActivity<ActivitySelectBinding, Nothing>(ActivitySelectBinding::inflate) {
+class SelectActivity : BaseViewModelActivity<ActivitySelectBinding, SelectViewModel>(ActivitySelectBinding::inflate) {
+
+    override val viewModel: SelectViewModel by viewModels()
 
     companion object {
 
