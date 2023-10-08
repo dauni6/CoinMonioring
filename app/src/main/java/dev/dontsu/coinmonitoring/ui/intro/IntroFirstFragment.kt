@@ -6,15 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import dev.dontsu.coinmonitoring.R
+import dev.dontsu.coinmonitoring.databinding.FragmentIntroFirstBinding
+import dev.dontsu.coinmonitoring.ui.base.BaseFragment
 
-class IntroFirstFragment : Fragment() {
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_intro_first, container, false)
-    }
+class IntroFirstFragment : BaseFragment<FragmentIntroFirstBinding, Nothing>(FragmentIntroFirstBinding::inflate) {
 
 }
+

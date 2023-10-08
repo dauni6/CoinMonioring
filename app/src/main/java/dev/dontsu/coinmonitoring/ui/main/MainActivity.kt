@@ -1,15 +1,8 @@
 package dev.dontsu.coinmonitoring.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import dev.dontsu.coinmonitoring.R
+import dev.dontsu.coinmonitoring.databinding.ActivityMainBinding
+import dev.dontsu.coinmonitoring.ui.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-    }
+class MainActivity : BaseActivity<ActivityMainBinding, Nothing>(ActivityMainBinding::inflate) {
 
 }

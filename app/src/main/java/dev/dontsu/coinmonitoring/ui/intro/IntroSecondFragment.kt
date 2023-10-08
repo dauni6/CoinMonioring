@@ -6,20 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import dev.dontsu.coinmonitoring.R
+import dev.dontsu.coinmonitoring.databinding.FragmentIntroSecondBinding
+import dev.dontsu.coinmonitoring.ui.base.BaseFragment
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-class IntroSecondFragment : Fragment() {
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_intro_second, container, false)
-    }
+class IntroSecondFragment : BaseFragment<FragmentIntroSecondBinding, Nothing>(FragmentIntroSecondBinding::inflate) {
 
 }

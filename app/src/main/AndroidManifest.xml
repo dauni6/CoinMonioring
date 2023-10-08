@@ -11,13 +11,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CoinMonitoring">
+        android:theme="@style/Theme.CoinMonitoring" >
+        <activity
+            android:name=".ui.intro.TEstActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.intro.IntroActivity"
             android:exported="true"
-            android:theme="@style/Theme.CoinMonitoring.Splash">
+            android:theme="@style/Theme.CoinMonitoring.Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
