@@ -10,6 +10,12 @@ class SelectActivity : BaseViewModelActivity<ActivitySelectBinding, SelectViewMo
 
     override val viewModel: SelectViewModel by viewModels()
 
+    override fun initListeners() {
+
+        viewModel.getCurrentCoins()
+
+    }
+
     companion object {
 
         fun createIntent(context: Context): Intent = Intent(context, SelectActivity::class.java)
