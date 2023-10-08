@@ -1,4 +1,4 @@
-package dev.dontsu.coinmonitering.ui
+package dev.dontsu.coinmonitering.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
