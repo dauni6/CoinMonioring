@@ -1,8 +1,8 @@
-package dev.dontsu.coinmonitoring.ui.intro
+package dev.dontsu.coinmonitoring.presentation.ui.intro
 
 import dev.dontsu.coinmonitoring.databinding.FragmentIntroSecondBinding
-import dev.dontsu.coinmonitoring.ui.base.BaseFragment
-import dev.dontsu.coinmonitoring.ui.select.SelectActivity
+import dev.dontsu.coinmonitoring.presentation.ui.base.BaseFragment
+import dev.dontsu.coinmonitoring.presentation.ui.select.SelectActivity
 
 class IntroSecondFragment : BaseFragment<FragmentIntroSecondBinding, Nothing>(FragmentIntroSecondBinding::inflate) {
 

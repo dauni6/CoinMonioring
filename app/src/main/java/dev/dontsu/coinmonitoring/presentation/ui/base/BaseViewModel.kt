@@ -1,4 +1,4 @@
-package dev.dontsu.coinmonitoring.ui.base
+package dev.dontsu.coinmonitoring.presentation.ui.base
 
 import androidx.lifecycle.ViewModel
 

@@ -1,4 +1,4 @@
-package dev.dontsu.coinmonitoring.ui.select
+package dev.dontsu.coinmonitoring.presentation.ui.select
 
 import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
@@ -6,7 +6,7 @@ import com.google.gson.JsonSyntaxException
 import dev.dontsu.coinmonitoring.data.model.CurrentPrice
 import dev.dontsu.coinmonitoring.data.model.CurrentPriceResult
 import dev.dontsu.coinmonitoring.data.repository.CoinRepository
-import dev.dontsu.coinmonitoring.ui.base.BaseViewModel
+import dev.dontsu.coinmonitoring.presentation.ui.base.BaseViewModel
 import kotlinx.coroutines.launch
 
 class SelectViewModel: BaseViewModel() {

@@ -1,10 +1,10 @@
-package dev.dontsu.coinmonitoring.ui.select
+package dev.dontsu.coinmonitoring.presentation.ui.select
 
 import android.content.Context
 import android.content.Intent
 import androidx.activity.viewModels
 import dev.dontsu.coinmonitoring.databinding.ActivitySelectBinding
-import dev.dontsu.coinmonitoring.ui.base.BaseViewModelActivity
+import dev.dontsu.coinmonitoring.presentation.ui.base.BaseViewModelActivity
 
 class SelectActivity : BaseViewModelActivity<ActivitySelectBinding, SelectViewModel>(ActivitySelectBinding::inflate) {
 

@@ -1,9 +1,9 @@
-package dev.dontsu.coinmonitoring.ui.intro
+package dev.dontsu.coinmonitoring.presentation.ui.intro
 
 import androidx.navigation.Navigation
 import dev.dontsu.coinmonitoring.R
 import dev.dontsu.coinmonitoring.databinding.FragmentIntroFirstBinding
-import dev.dontsu.coinmonitoring.ui.base.BaseFragment
+import dev.dontsu.coinmonitoring.presentation.ui.base.BaseFragment
 
 class IntroFirstFragment : BaseFragment<FragmentIntroFirstBinding, Nothing>(FragmentIntroFirstBinding::inflate) {
 

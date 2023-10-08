@@ -15,10 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CoinMonitoring">
         <activity
-            android:name=".ui.select.SelectActivity"
+            android:name=".presentation.ui.select.SelectActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.intro.IntroActivity"
+            android:name=".presentation.ui.intro.IntroActivity"
             android:exported="true"
             android:theme="@style/Theme.CoinMonitoring.Splash">
             <intent-filter>
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".presentation.ui.main.MainActivity"
             android:exported="true" />
     </application>
 
