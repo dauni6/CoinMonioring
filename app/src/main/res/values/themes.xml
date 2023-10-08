@@ -1,9 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.CoinMonitoring" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.CoinMonitoring" parent="Theme.AppCompat.Light">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="Theme.CoinMonitoring" parent="Base.Theme.CoinMonitoring" />
+
+    <style name="Theme.CoinMonitoring.Splash" parent="Theme.CoinMonitoring">
+        <item name="windowSplashScreenBackground">@color/red</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/graph</item>
+        <item name="postSplashScreenTheme">@style/Theme.CoinMonitoring</item>
+    </style>
+
 </resources>

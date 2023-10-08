@@ -14,7 +14,8 @@
         android:theme="@style/Theme.CoinMonitoring">
         <activity
             android:name=".ui.IntroActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.CoinMonitoring.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
