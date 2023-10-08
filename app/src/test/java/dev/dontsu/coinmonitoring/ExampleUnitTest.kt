@@ -1,4 +1,4 @@
-package dev.dontsu.coinmonitering
+package dev.dontsu.coinmonitoring
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package dev.dontsu.coinmonitering
+package dev.dontsu.coinmonitoring
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

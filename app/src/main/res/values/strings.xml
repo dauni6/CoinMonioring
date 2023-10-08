@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">CoinMonitering</string>
+    <string name="app_name">CoinMonitoring</string>
+    <string name="text_next">다음</string>
 </resources>

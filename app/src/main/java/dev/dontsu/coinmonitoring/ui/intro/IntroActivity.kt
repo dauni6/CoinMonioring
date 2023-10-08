@@ -1,9 +1,9 @@
-package dev.dontsu.coinmonitering.ui.intro
+package dev.dontsu.coinmonitoring.ui.intro
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import dev.dontsu.coinmonitering.R
+import dev.dontsu.coinmonitoring.R
 
 class IntroActivity : AppCompatActivity() {
 

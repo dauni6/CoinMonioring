@@ -1,8 +1,8 @@
-package dev.dontsu.coinmonitering.ui.main
+package dev.dontsu.coinmonitoring.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import dev.dontsu.coinmonitering.R
+import dev.dontsu.coinmonitoring.R
 
 class MainActivity : AppCompatActivity() {
 

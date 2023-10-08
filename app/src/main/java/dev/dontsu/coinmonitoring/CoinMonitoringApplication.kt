@@ -1,4 +1,4 @@
-package dev.dontsu.coinmonitering
+package dev.dontsu.coinmonitoring
 
 import android.app.Application
 import timber.log.Timber
