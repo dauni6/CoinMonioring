@@ -4,6 +4,7 @@ import dev.dontsu.coinmonitoring.data.network.CoinApi
 import dev.dontsu.coinmonitoring.data.network.RetrofitInstance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import java.util.concurrent.Flow
 
 class CoinRepository {
 
