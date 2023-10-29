@@ -11,6 +11,7 @@ import dev.dontsu.coinmonitoring.R
 import dev.dontsu.coinmonitoring.databinding.ActivityMainBinding
 import dev.dontsu.coinmonitoring.presentation.ui.base.BaseActivity
 import dev.dontsu.coinmonitoring.presentation.ui.base.BaseViewModelActivity
+import dev.dontsu.coinmonitoring.presentation.ui.setting.SettingActivity
 
 class MainActivity : BaseViewModelActivity<ActivityMainBinding, MainViewModel>(ActivityMainBinding::inflate) {
 
@@ -23,6 +24,12 @@ class MainActivity : BaseViewModelActivity<ActivityMainBinding, MainViewModel>(A
         val navController = navHostFragment.navController
         binding.bnvMain.setupWithNavController(navController)
 
+    }
+
+    override fun initListeners() = with(binding) {
+        setting.setOnClickListener {
+            SettingActivity.startActivity(this@MainActivity)
+        }
     }
 
     companion object {
