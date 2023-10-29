@@ -4,7 +4,6 @@ import dev.dontsu.coinmonitoring.data.network.CoinApi
 import dev.dontsu.coinmonitoring.data.network.RetrofitInstance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import java.util.concurrent.Flow
 
 class CoinRepository {
 
@@ -12,6 +11,10 @@ class CoinRepository {
 
     suspend fun getCurrentCoins() = withContext(Dispatchers.IO) {
         client.getCurrentCoins()
+    }
+
+    suspend fun getRecentCoinPrices(coin: String) = withContext(Dispatchers.IO) {
+        client.getRecentCoinPrices(coin = coin)
     }
 
 }

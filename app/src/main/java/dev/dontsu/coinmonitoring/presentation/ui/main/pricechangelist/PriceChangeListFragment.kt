@@ -1,20 +1,37 @@
 package dev.dontsu.coinmonitoring.presentation.ui.main.pricechangelist
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import dev.dontsu.coinmonitoring.R
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModel
+import dev.dontsu.coinmonitoring.databinding.FragmentPriceChangeBinding
+import dev.dontsu.coinmonitoring.presentation.ui.base.BaseFragment
+import dev.dontsu.coinmonitoring.presentation.ui.main.MainViewModel
+import dev.dontsu.coinmonitoring.presentation.ui.main.pricechangelist.adapter.PriceUpDownAdapter
 
-class PriceChangeListFragment : Fragment() {
+class PriceChangeListFragment : BaseFragment<FragmentPriceChangeBinding>(FragmentPriceChangeBinding::inflate) {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_price_change, container, false)
+    override val viewModel: MainViewModel by activityViewModels()
+
+    override fun initDatas() {
+        viewModel.getAllSelectedCOinPrice()
     }
+
+    override fun initObservers() = with(viewModel) {
+        changed15mins.observe(viewLifecycleOwner) {
+            val upDownAdapter = PriceUpDownAdapter(it)
+            binding.price15m.adapter = upDownAdapter
+        }
+
+        changed30mins.observe(viewLifecycleOwner) {
+            val upDownAdapter = PriceUpDownAdapter(it)
+            binding.price30m.adapter = upDownAdapter
+        }
+
+        changed45mins.observe(viewLifecycleOwner) {
+            val upDownAdapter = PriceUpDownAdapter(it)
+            binding.price45m.adapter = upDownAdapter
+        }
+
+    }
+
 
 }
