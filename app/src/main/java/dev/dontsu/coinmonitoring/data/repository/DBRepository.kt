@@ -3,6 +3,7 @@ package dev.dontsu.coinmonitoring.data.repository
 import dev.dontsu.coinmonitoring.CoinMonitoringApplication
 import dev.dontsu.coinmonitoring.data.db.CoinPriceDatabase
 import dev.dontsu.coinmonitoring.data.model.entity.InterestCoinEntity
+import dev.dontsu.coinmonitoring.data.model.entity.SelectedCoinPriceEntity
 
 class DBRepository {
 
@@ -16,5 +17,11 @@ class DBRepository {
     fun updateInterestCoin(interestCoinEntity: InterestCoinEntity) = db.interestCoinDAO().update(interestCoinEntity = interestCoinEntity)
 
     fun getAllInterestSelectedCoins() = db.interestCoinDAO().getSelectedCoins()
+
+    fun getAllCoinPrices() = db.selectedCoinPriceDAO().getAllCoinPrices()
+
+    fun insertCoinPrice(entity: SelectedCoinPriceEntity) = db.selectedCoinPriceDAO().insert(entity)
+
+    fun getOneSelectedCoinPrice(coinName: String) = db.selectedCoinPriceDAO().getOneCoinPrice(coinName)
 
 }

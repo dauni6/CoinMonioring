@@ -28,10 +28,13 @@ abstract class BaseViewModelFragment<VB: ViewBinding, VM: ViewModel>(
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initDatas()
         initViews()
         initListeners()
         initObservers()
     }
+
+    open fun initDatas() = Unit
 
     open fun initViews() = Unit
 
