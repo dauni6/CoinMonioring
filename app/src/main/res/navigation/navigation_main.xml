@@ -3,22 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_main"
-    app:startDestination="@id/introFirstFragment">
+    app:startDestination="@id/coinListFragment">
 
     <fragment
-        android:id="@+id/introFirstFragment"
-        android:name="dev.dontsu.coinmonitoring.presentation.ui.intro.IntroFirstFragment"
-        android:label="fragment_intro_first"
-        tools:layout="@layout/fragment_intro_first">
-        <action
-            android:id="@+id/action_introFirstFragment_to_introSecondFragment"
-            app:destination="@id/introSecondFragment" />
-    </fragment>
+        android:id="@+id/coinListFragment"
+        android:name="dev.dontsu.coinmonitoring.presentation.ui.main.coinlist.CoinListFragment"
+        android:label="fragment_coin_list"
+        tools:layout="@layout/fragment_coin_list" />
 
     <fragment
-        android:id="@+id/introSecondFragment"
-        android:name="dev.dontsu.coinmonitoring.presentation.ui.intro.IntroSecondFragment"
-        android:label="fragment_intro_second"
-        tools:layout="@layout/fragment_intro_second" />
-
+        android:id="@+id/priceChangeListFragment"
+        android:name="dev.dontsu.coinmonitoring.presentation.ui.main.pricechangelist.PriceChangeListFragment"
+        android:label="fragment_price_change"
+        tools:layout="@layout/fragment_price_change" />
 </navigation>

@@ -20,7 +20,7 @@ data class CurrentPrice(
     @SerializedName("units_traded_24H")
     val unitsTraded24H: String,
     @SerializedName("acc_trade_value_24H")
-    val accTradeValue_24H: String,
+    val accTradeValue24H: String,
     @SerializedName("fluctate_24H")
     val fluctate24H: String,
     @SerializedName("fluctate_rate_24H")

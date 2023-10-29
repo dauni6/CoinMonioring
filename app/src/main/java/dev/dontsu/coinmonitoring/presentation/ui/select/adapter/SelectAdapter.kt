@@ -8,11 +8,13 @@ import androidx.recyclerview.widget.RecyclerView
 import dev.dontsu.coinmonitoring.R
 import dev.dontsu.coinmonitoring.data.model.CurrentPriceResult
 import dev.dontsu.coinmonitoring.databinding.ItemIntroCoinBinding
-import timber.log.Timber
 
 class SelectAdapter(private val onLikeClick: (CurrentPriceResult, Int) -> Unit) : RecyclerView.Adapter<SelectAdapter.SelectViewHolder>() {
 
     private val items = arrayListOf<CurrentPriceResult>()
+    private val selectedCoins = arrayListOf<String>()
+
+    fun getSelectedCoins() = selectedCoins
 
     @SuppressLint("NotifyDataSetChanged")
     fun setNewItemList(list: List<CurrentPriceResult>) {
@@ -47,7 +49,7 @@ class SelectAdapter(private val onLikeClick: (CurrentPriceResult, Int) -> Unit) 
         holder.bind(items[position])
     }
 
-    class SelectViewHolder(
+    inner class SelectViewHolder(
         private val binding: ItemIntroCoinBinding,
         onLikeClick: (CurrentPriceResult, Int) -> Unit
     ) :
@@ -58,6 +60,11 @@ class SelectAdapter(private val onLikeClick: (CurrentPriceResult, Int) -> Unit) 
         init {
 
             binding.likeBtn.setOnClickListener {
+                if (selectedCoins.contains(coin.coinName)) {
+                    selectedCoins.remove(coin.coinName)
+                } else {
+                    selectedCoins.add(coin.coinName)
+                }
                 onLikeClick.invoke(coin, adapterPosition)
             }
 
